@@ -1,0 +1,56 @@
+
+
+
+
+@mixin navText() {
+    font-family:korolev, sans-serif;
+    font-weight: 300;
+    color: #bfbaba;
+}
+
+@mixin buttonText() {
+    font-family:korolev, sans-serif;
+    font-weight: 700;
+    color: #5b5b5b;
+}
+
+@mixin captionText() {
+    font-family:korolev, sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+@mixin contentText() {
+    font-family:korolev, sans-serif;
+	font-weight: 300;
+	color:black;
+}
+
+
+@mixin navStyle(){
+    z-index: 99;
+	position: fixed;
+	top: 0;
+	background: white;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+	.sH-box{
+		text-align: center;
+		align-self: center;
+		font-size:2em;
+		@include navText;
+	}
+
+	a{
+		text-decoration: none;
+		@include navText;
+
+		li{
+			text-decoration: none;
+		}
+	}
+
+	a:hover, a:active{
+		color: $abbGray(73, 71, 71);
+	}
+
+}
