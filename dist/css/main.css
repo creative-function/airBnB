@@ -67,10 +67,6 @@ table {
 	border-spacing: 0;
 }
 
-#nav {
-	visibility: hidden;
-}
-
 #p2-Header .container-fluid {
 	height: 100vh;
 	background-image: url("../img/BG.welcome.png");
@@ -272,12 +268,6 @@ html, body {
 	margin: 0 auto;
 }
 
-#p2-Content .s2 .row .cont_img {
-	display: -webkit-box;
-	display: flex;
-	align-content: stretch;
-}
-
 #p2-Content .s2 .row .cont_text {
 	display: -webkit-box;
 	display: flex;
@@ -339,6 +329,45 @@ html, body {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: reverse;
 	        flex-direction: row-reverse;
+}
+
+#p2-Content .s2_3codes .icon_box {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
+	width: 50%;
+	-webkit-box-pack: center;
+	        justify-content: center;
+}
+
+#p2-Content .s2_3codes .icon_box img {
+	width: 50%;
+	margin: 0 auto;
+}
+
+#p2-Content .s2_3codes .icon_box p {
+	width: 80%;
+	margin: auto;
+	height: 10%;
+	padding: 3%;
+	text-align: center;
+	font-family: korolev, sans-serif;
+	font-weight: 300;
+	color: black;
+}
+
+#p2-Content .s2_3codes .icon_box .srv {
+	font-family: korolev, sans-serif;
+	font-weight: 700;
+	color: #5b5b5b;
+}
+
+#p2-Content .s2_3codes .icon_box .code {
+	border-top: 1px solid black;
+	font-weight: bold;
+	margin-bottom: 5%;
 }
 
 /*# sourceMappingURL=main.css.map */

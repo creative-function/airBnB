@@ -139,11 +139,6 @@ html,body{
 		.row{
 			width: 100%;
 			margin:0 auto;
-
-			.cont_img{
-				display: flex;
-				align-content: stretch;
-			}
 		
 			.cont_text{
 				display: flex;
@@ -198,6 +193,38 @@ html,body{
 	
 		}
 	
+	}
+
+	.s2_3codes{
+
+		.icon_box{
+			display: flex;
+			flex-direction: column;
+			width:50%;
+			justify-content: center;
+			img{
+				width:50%;
+				margin: 0 auto;
+			}
+
+			p{
+				width:80%;
+				margin: auto;
+				height: 10%;
+				padding:3%;
+				text-align: center;
+				@include contentText();
+			}
+
+			.srv{
+				@include buttonText();
+			}
+			.code{
+				border-top: 1px solid black;
+				font-weight: bold;
+				margin-bottom:5%;
+			}
+		}
 	}
 
 }
